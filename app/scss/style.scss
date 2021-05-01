@@ -261,80 +261,78 @@
 
 //start advantages
 
-.advantages{
+.advantages {
   background-color: $bg;
   padding: 110px 0;
 }
-.advantages__title{
+.advantages__title {
   color: #fff;
 }
 .advantages__inner {
   display: flex;
   justify-content: space-between;
 }
-.advantages__item{
+.advantages__item {
   max-width: 370px;
   text-align: center;
   padding: 0px 15px;
-  &:hover{
+  &:hover {
     .advantages__item-images {
       background-color: $green;
+    }
+
+    .advantages__item-title {
+      color: $green;
+    }
+    .advantages__item-images {
+      g {
+        fill: #fff;
       }
-  
-  .advantages__item-title {
-    color: $green;
-  }
-  .advantages__item-images{
-    g{
-      fill: #fff;
     }
   }
-}
-&-images {
-  width: 114px;
-  height: 114px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 30px;
-  transition: all 0.5s;
-}
-&-title {
-  margin-bottom: 25px;
-  color: #fff;
-  @include f500;
-  font-size: 24px;
-  transition: all 0.5 s;
-}
-&-text{
-  font-size: 15px;
-
-}
-
-
-.icosvg-1 {
-  svg {
-    width: 50px;
+  &-images {
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    transition: all 0.5s;
   }
-}
-.icosvg-2 {
-  svg {
-    width: 70px;
+  &-title {
+    margin-bottom: 25px;
+    color: #fff;
+    @include f500;
+    font-size: 24px;
+    transition: all 0.5 s;
   }
-}
-.icosvg-3 {
-  svg {
-    width: 86px;
+  &-text {
+    font-size: 15px;
   }
-}
+
+  .icosvg-1 {
+    svg {
+      width: 50px;
+    }
+  }
+  .icosvg-2 {
+    svg {
+      width: 70px;
+    }
+  }
+  .icosvg-3 {
+    svg {
+      width: 86px;
+    }
+  }
 }
 //end advantages
 
 //start author
-.author{
-    background-position: center;
+.author {
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 750px;
@@ -342,7 +340,7 @@
   justify-content: center;
   align-items: center;
 
-  &__box{
+  &__box {
     max-width: 650px;
     min-height: 215px;
     display: flex;
@@ -351,21 +349,52 @@
     width: 100%;
     background-color: $green;
   }
-  &__title{
+  &__title {
     font-size: 30px;
     line-height: 30px;
     color: #fff;
     margin-right: 45px;
     max-width: 260px;
-    span{
+    span {
       @include f700;
     }
   }
-  &__link{
+  &__link {
     font-size: 18px;
     line-height: 36px;
     padding: 14px 40px;
     background-color: #fff;
   }
 }
-//and author
+//end author
+//start tutorial
+
+.tutorial {
+  padding: 70px 0 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+  }
+}
+.tutorial__item{
+  &-images{
+    min-height: 270px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    &-title{
+  background-color: #f8f8f8;
+  font-size: 24px;
+  text-align: center;
+  @include f700;
+  padding: 30px 10px;
+  color: $bg; 
+  
+}
+}
+//end tutorial
